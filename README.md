@@ -8,15 +8,16 @@
 <div align="center">	
 
   [![Status](https://img.shields.io/badge/status-active-success.svg)]() 	
-  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/issues)	
-  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/kylelobo/The-Documentation-Compendium/pulls)	
+  [![GitHub Issues](https://img.shields.io/github/issues/kylelobo/The-Documentation-Compendium.svg)](https://github.com/aptracky/MaskUp/issues)	
+  [![GitHub Pull Requests](https://img.shields.io/github/issues-pr/kylelobo/The-Documentation-Compendium.svg)](https://github.com/aptracky/MaskUp/pulls)	
   [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)	
 
 </div>	
 
 ---	
 
-<p align="center"> This project is all about keeping people safe. A project using the OpenCV to use facial rec and some custom haar files to detect wheater someone has a mask properly on.	
+<p align="center"> This project is all about keeping people safe. 
+                    A project using the OpenCV to use facial rec and some custom haar files to detect wheater someone has a mask properly on.	
     <br> 	
 </p>	
 
@@ -32,8 +33,9 @@
 - [Acknowledgments](#acknowledgement)	
 
 ## 🧐 About <a name = "about"></a>	
-  MaskUP is a client server application that its basic functionality is detecting whether or not a person is wearing a face mask properly. The client uses a camera to scan for faces and scrapes and formats that face to be ready for facial detection. This entails turning the face into a grayscale image. The client will then send the array of grayscale values to the server for detection. The server receives the data and uses OpenCV to detect facial features using a HAAR file. Then the server sends back a boolean value of whether or not the subject is wearing a face mask properly. The client will then display one of two images. 
-
+<p align="center">
+    MaskUP is a client server application that its basic functionality is detecting whether or not a person is wearing a face mask properly. The client uses a camera to scan for faces and scrapes and formats that face to be ready for facial detection. This entails turning the face into a grayscale image. The client will then send the array of grayscale values to the server for detection. The server receives the data and uses OpenCV to detect facial features using a HAAR file. Then the server sends back a boolean value of whether or not the subject is wearing a face mask properly. The client will then display one of two images. 
+</p>
 
 ## 🏁 Getting Started <a name = "getting_started"></a>	
 Instructions to come!!!	
@@ -49,7 +51,15 @@ Can use images insated...exmaples bellow
 COMING SOON
 
 ## 🎈 Usage <a name="usage"></a>	
-Add notes about how to use the system.	
+- Telling People to Wear there Mask!!!
+- Unlocking Doors
+- Creating a library of images for a deep leanring library
+- Could be implemented in:
+    - Businesses
+    - Schools
+    - Dinning Halls
+    - Appartment Buildings
+    - Anywhere there is a need for people to weare a mask properly.
 
 ## 🚀 Deployment <a name = "deployment"></a>	
 Add additional notes about how to deploy this on a live system.	
