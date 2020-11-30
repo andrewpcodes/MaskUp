@@ -25,9 +25,9 @@ def clientHandler(conn, addr):
             if msg == DISCONNECT_MSG:
                 connected = False
 
-            print(f"[{addr}] {msg}")
             conn.send("Msg received".encode(FORMAT))
 
+            
     conn.close()
 
 

@@ -2,6 +2,7 @@
 # Tested with OpenCV3
 
 import cv2
+import socket
 
 cap = cv2.VideoCapture(0)
 
