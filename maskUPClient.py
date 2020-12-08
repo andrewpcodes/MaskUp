@@ -39,10 +39,10 @@ while True:
     recived = client_socket.recv(1024)
     print(recived)
     if(recived == b'1'):
-        img = Image.open("NETWORK.PNG")
+        img = Image.open("assets/NETWORK.PNG")
         img.show("Image")
     elif(recived == b'0'):
-        img = Image.open("NETWORK2.PNG")
+        img = Image.open("assets/NETWORK2.PNG")
         img.show("Image")
     cv2.imshow('MaskUp', frame)
 
