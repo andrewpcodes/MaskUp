@@ -1,9 +1,7 @@
-![Build and Test](https://github.com/aptracky//workflows/Build%20and%20Test/badge.svg)
-
 # MASKUP
 ## Introduction
 
-    MaskUP is a client server application that its basic functionality is detecting whether or not a person is wearing a face mask properly. The client uses a camera to scan for faces and scrapes and formats that face to be ready for facial detection. This entails turning the face into a grayscale image. The client will then send the array of grayscale values to the server for detection. The server receives the data and uses OpenCV to detect facial features using a HAAR file. Then the server sends back a boolean value of whether or not the subject is wearing a face mask properly. The client will then display one of two images. 
+MaskUP is a client server application that its basic functionality is detecting whether or not a person is wearing a face mask properly. The client uses a camera to scan for faces and scrapes and formats that face to be ready for facial detection. This entails turning the face into a grayscale image. The client will then send the array of grayscale values to the server for detection. The server receives the data and uses OpenCV to detect facial features using a HAAR file. Then the server sends back a boolean value of whether or not the subject is wearing a face mask properly. The client will then display one of two images. 
 
 ## Features
 List all the features (use cases) of your application.
