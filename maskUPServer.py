@@ -9,9 +9,12 @@ import numpy as np
 import struct
 import zlib
 from threading import Thread
+from PIL import Image
 
-HOST='127.0.0.1'
-PORT=2323
+### PUT YOUR IP AND PORT HERE
+HOST=''
+PORT=
+#############################
 mouthCascade = cv2.CascadeClassifier("cascades/Mouth.xml")
 THREADS = []
 
@@ -55,13 +58,18 @@ class ClientHandler(Thread):
                 if (len(mouths) > 0):
                     send = "0"
                     conn.send(send.encode())
+                    img = Image.open("assets/NETWORK2.PNG")
+                    img.show("Image")
                 else:
                     send = "1"
                     conn.send(send.encode())
+                    img = Image.open("assets/NETWORK.PNG")
+                    img.show("Image")
+
                 
                 for (x, y, w, h) in mouths:
                     cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
-
+                    
                 cv2.imshow('ImageWindow',frame)
                 if cv2.waitKey(1) & 0xFF == ord('q'):
                     break
@@ -83,5 +91,5 @@ while True:
     newThread.start()
     THREADS.append(newThread)
 
-    for t in THREADS:   
-        t.join
+for t in THREADS:   
+    t.join

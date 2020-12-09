@@ -8,11 +8,12 @@ import struct
 import time
 import pickle
 import zlib
+from tkinter import *
 from PIL import Image
 
 ## Connecting to the server.
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client_socket.connect(('127.0.0.1', 2323))
+client_socket.connect(('YOUR IP HERE', "YOUR PORT HERE"))
 connection = client_socket.makefile('wb')
 
 # Initiating the video capture with cv2
@@ -40,11 +41,10 @@ while True:
     print(recived)
     if(recived == b'1'):
         img = Image.open("assets/NETWORK.PNG")
-        img.show("Image")
+        #img.show("Image")
     elif(recived == b'0'):
         img = Image.open("assets/NETWORK2.PNG")
-        img.show("Image")
-    cv2.imshow('MaskUp', frame)
+        #img.show("Image")
 
 #Close the connection and 
 client_socket.close()
